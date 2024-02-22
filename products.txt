@@ -1,0 +1,237 @@
+Milk,Grocery,2.50,100
+Eggs,Grocery,1.99,150
+Bread,Grocery,1.75,200
+Apple,Grocery,0.75,300
+Banana,Grocery,0.50,250
+Potato,Grocery,0.40,400
+Carrot,Grocery,0.35,300
+Onion,Grocery,0.30,350
+Tomato,Grocery,0.60,200
+Cucumber,Grocery,0.50,150
+Sugar,Grocery,1.50,200
+Flour,Grocery,2.00,150
+Salt,Grocery,0.75,300
+Pepper,Grocery,1.00,200
+Chicken,Meat,3.50,100
+Beef,Meat,5.00,80
+Fish,Meat,6.50,90
+Shrimp,Meat,8.00,70
+Lamb,Meat,7.00,60
+Turkey,Meat,5.50,80
+Duck,Meat,6.00,70
+Goat,Meat,4.50,100
+Plastic Chair,Plastic,10.00,50
+Plastic Table,Plastic,15.00,40
+Plastic Bowl,Plastic,5.00,80
+Plastic Plate,Plastic,3.00,100
+Plastic Cup,Plastic,2.00,120
+Plastic Fork,Plastic,1.50,150
+Plastic Spoon,Plastic,1.50,150
+Plastic Knife,Plastic,1.50,150
+Men's T-Shirt,Clothes,12.00,200
+Men's Jeans,Clothes,20.00,150
+Men's Shorts,Clothes,15.00,180
+Men's Shirt,Clothes,18.00,170
+Women's Dress,Clothes,25.00,120
+Women's Skirt,Clothes,18.00,150
+Women's Blouse,Clothes,20.00,140
+Women's Pants,Clothes,22.00,130
+Kid's T-Shirt,Clothes,8.00,250
+Kid's Shorts,Clothes,10.00,200
+Kid's Dress,Clothes,15.00,180
+Kid's Pants,Clothes,12.00,220
+Men's Jacket,Clothes,40.00,100
+Men's Sweater,Clothes,35.00,120
+Men's Hoodie,Clothes,30.00,150
+Women's Coat,Clothes,45.00,90
+Women's Sweater,Clothes,35.00,110
+Women's Cardigan,Clothes,30.00,130
+Women's Hoodie,Clothes,25.00,160
+Kid's Jacket,Clothes,25.00,180
+Kid's Sweater,Clothes,20.00,200
+Kid's Hoodie,Clothes,18.00,220
+Tennis Shoes,Clothes,50.00,100
+Running Shoes,Clothes,45.00,120
+Sandals,Clothes,30.00,150
+High Heels,Clothes,60.00,90
+Boots,Clothes,55.00,110
+Slippers,Clothes,20.00,130
+Backpack,Bags,25.00,180
+Handbag,Bags,30.00,200
+Shoulder Bag,Bags,20.00,220
+Laptop Bag,Bags,35.00,150
+Briefcase,Bags,40.00,170
+Tote Bag,Bags,15.00,190
+Messenger Bag,Bags,25.00,210
+Duffle Bag,Bags,35.00,130
+Suitcase,Bags,50.00,150
+Travel Backpack,Bags,45.00,170
+Pencil Case,Bags,10.00,190
+Notebook,Bags,5.00,210
+Pen,Bags,1.00,230
+Pencil,Bags,0.50,250
+Eraser,Bags,0.25,270
+Ruler,Bags,1.00,290
+Calculator,Bags,10.00,200
+Water Bottle,Bags,8.00,220
+Coffee Mug,Bags,6.00,240
+Plastic Utensils,Bags,3.00,180
+Paper Plates,Bags,5.00,200
+Napkins,Bags,2.00,220
+Cutting Board,Kitchenware,15.00,140
+Knife Set,Kitchenware,30.00,160
+Cooking Pot,Kitchenware,20.00,180
+Frying Pan,Kitchenware,18.00,200
+Mixing Bowl,Kitchenware,10.00,220
+Measuring Cups,Kitchenware,8.00,240
+Spatula,Kitchenware,5.00,260
+Whisk,Kitchenware,4.00,280
+Baking Sheet,Kitchenware,12.00,300
+Toaster,Kitchenware,25.00,140
+Blender,Kitchenware,40.00,160
+Coffee Maker,Kitchenware,35.00,180
+Microwave,Kitchenware,80.00,200
+Dish Rack,Kitchenware,20.00,220
+Trash Can,Kitchenware,30.00,240
+Broom & Dustpan,Cleaning Supplies,15.00,260
+Mop,Cleaning Supplies,10.00,280
+Vacuum Cleaner,Cleaning Supplies,100.00,200
+Dish Soap,Cleaning Supplies,5.00,220
+Laundry Detergent,Cleaning Supplies,8.00,240
+Bleach,Cleaning Supplies,4.00,260
+Glass Cleaner,Cleaning Supplies,3.00,280
+All-Purpose Cleaner,Cleaning Supplies,6.00,300
+Sponge,Cleaning Supplies,1.00,150
+Paper Towels,Cleaning Supplies,2.00,170
+Toilet Paper,Cleaning Supplies,3.00,190
+Tissues,Cleaning Supplies,2.00,210
+Hand Soap,Cleaning Supplies,4.00,230
+Shampoo,Personal Care,10.00,250
+Conditioner,Personal Care,8.00,270
+Body Wash,Personal Care,6.00,290
+Soap,Personal Care,2.00,310
+Toothpaste,Personal Care,4.00,330
+Toothbrush,Personal Care,3.00,350
+Floss,Personal Care,2.00,370
+Deodorant,Personal Care,5.00,390
+Shaving Cream,Personal Care,4.00,410
+Razor,Personal Care,3.00,430
+Hair Gel,Personal Care,6.00,450
+Hair Spray,Personal Care,5.00,470
+Hairbrush,Personal Care,4.00,490
+Hair Dryer,Personal Care,25.00,510
+Hair Straightener,Personal Care,30.00,530
+Cotton Swabs,Personal Care,2.00,550
+Cotton Balls,Personal Care,1.00,570
+Facial Cleanser,Personal Care,8.00,590
+Facial Moisturizer,Personal Care,10.00,610
+Sunscreen,Personal Care,12.00,630
+Lip Balm,Personal Care,3.00,650
+Hand Cream,Personal Care,6.00,670
+Body Lotion,Personal Care,8.00,690
+Foot Cream,Personal Care,5.00,710
+Foot Scrub,Personal Care,7.00,730
+Nail Polish,Personal Care,4.00,750
+Nail Polish Remover,Personal Care,3.00,770
+Nail File,Personal Care,2.00,790
+Hand Sanitizer,Personal Care,3.00,810
+Face Mask,Personal Care,5.00,830
+Hair Mask,Personal Care,10.00,850
+Eye Cream,Personal Care,12.00,870
+Under Eye Gel Pads,Personal Care,8.00,890
+Facial Serum,Personal Care,15.00,910
+Shower Gel,Personal Care,6.00,930
+Shower Scrub,Personal Care,8.00,950
+Body Scrub,Personal Care,10.00,970
+Body Butter,Personal Care,12.00,990
+Massage Oil,Personal Care,15.00,1010
+Essential Oil,Personal Care,8.00,1030
+Aloe Vera Gel,Personal Care,6.00,1050
+Hair Serum,Personal Care,10.00,1070
+Hand Wash,Personal Care,4.00,1090
+Body Oil,Personal Care,12.00,1110
+Foot Spray,Personal Care,5.00,1130
+Lip Scrub,Personal Care,3.00,1150
+Nail Treatment,Personal Care,5.00,1170
+Hand Exfoliant,Personal Care,4.00,1190
+Eyebrow Gel,Personal Care,6.00,1210
+Face Mist,Personal Care,8.00,1230
+Foot Soak,Personal Care,7.00,1250
+Facial Toner,Personal Care,10.00,1270
+Cuticle Oil,Personal Care,5.00,1290
+Dental Floss,Personal Care,2.00,1310
+Face Wipes,Personal Care,4.00,1330
+Dry Shampoo,Personal Care,7.00,1350
+Face Powder,Personal Care,8.00,1370
+Face Primer,Personal Care,10.00,1390
+Setting Spray,Personal Care,6.00,1410
+Eyeshadow Palette,Personal Care,15.00,1430
+Blush,Personal Care,8.00,1450
+Bronzer,Personal Care,10.00,1470
+Highlighter,Personal Care,12.00,1490
+Makeup Remover,Personal Care,6.00,1510
+Micellar Water,Personal Care,8.00,1530
+Facial Oil,Personal Care,10.00,1550
+Hair Powder,Personal Care,7.00,1570
+Dry Conditioner,Personal Care,8.00,1590
+Lip Gloss,Personal Care,5.00,1610
+Lip Liner,Personal Care,4.00,1630
+Eyeliner,Personal Care,6.00,1650
+Mascara,Personal Care,8.00,1670
+Eyebrow Pencil,Personal Care,5.00,1690
+Hair Color,Personal Care,12.00,1710
+Hair Extensions,Personal Care,15.00,1730
+Hair Rollers,Personal Care,10.00,1750
+Hair Clips,Personal Care,3.00,1770
+Hair Pins,Personal Care,2.00,1790
+Hair Bands,Personal Care,1.00,1810
+Hair Spray,Personal Care,5.00,1830
+Hair Gel,Personal Care,4.00,1850
+Hair Wax,Personal Care,6.00,1870
+Hair Mousse,Personal Care,8.00,1890
+Hair Cream,Personal Care,7.00,1910
+Hair Serum,Personal Care,10.00,1930
+Hair Oil,Personal Care,12.00,1950
+Hair Mask,Personal Care,15.00,1970
+Hair Treatment,Personal Care,20.00,1990
+Hair Conditioner,Personal Care,8.00,2010
+Hair Shampoo,Personal Care,10.00,2030
+Shower Cap,Personal Care,2.00,2050
+Shower Sponge,Personal Care,3.00,2070
+Bath Salts,Personal Care,5.00,2090
+Bath Bombs,Personal Care,7.00,2110
+Bubble Bath,Personal Care,8.00,2130
+Shower Curtain,Personal Care,15.00,2150
+Bath Mat,Personal Care,10.00,2170
+Toilet Brush,Personal Care,6.00,2190
+Toilet Plunger,Personal Care,7.00,2210
+Toilet Seat,Personal Care,8.00,2230
+Toilet Paper Holder,Personal Care,5.00,2250
+Soap Dish,Personal Care,3.00,2270
+Towel Rack,Personal Care,10.00,2290
+Bath Towels,Personal Care,8.00,2310
+Hand Towels,Personal Care,5.00,2330
+Face Towels,Personal Care,4.00,2350
+Beach Towels,Personal Care,12.00,2370
+Kitchen Towels,Personal Care,6.00,2390
+Dish Towels,Personal Care,7.00,2410
+Tea Towels,Personal Care,3.00,2430
+Bath Robe,Personal Care,15.00,2450
+Shower Shoes,Personal Care,8.00,2470
+Sponge Bath,Personal Care,5.00,2490
+Shower Radio,Personal Care,20.00,2510
+Bath Brush,Personal Care,6.00,2530
+Shower Mirror,Personal Care,10.00,2550
+Shower Stool,Personal Care,15.00,2570
+Shower Caddy,Personal Care,12.00,2590
+Shower Curtain Rings,Personal Care,3.00,2610
+Shower Curtain Liner,Personal Care,8.00,2630
+Shower Curtain Rod,Personal Care,10.00,2650
+Shower Shelf,Personal Care,5.00,2670
+Shower Hook,Personal Care,2.00,2690
+Shower Arm,Personal Care,6.00,2710
+Shower Head,Personal Care,20.00,2730
+Shower Faucet,Personal Care,30.00,2750
+Shower Door,Personal Care,50.00,2770
+Shower Enclosure,Personal Care,80.00,2790
+Shower Panel,Personal Care,100.00,2810
