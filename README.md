@@ -1,3 +1,2 @@
 # utility-store
-
-# Made this edit right now
+save all files in one folder and run main.py
