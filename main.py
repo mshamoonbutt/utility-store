@@ -15,6 +15,12 @@ img = PhotoImage(file='image1.png')
 Label(frame, image=img, bg='black').place(x=-2, y=-2)
 
 #########################################################
+def logout_profile():
+    root.destroy()  # Close the profile window
+
+def logout_store():
+    root.destroy()  # Close the store window
+
 #Profile Page View
 def profile():
     def login():
@@ -44,7 +50,7 @@ def profile():
 
         # Check password strength
         if not is_strong_password(password):
-            messagebox.showerror("Error", "Password is not strong enough")
+            messagebox.showerror("Error", "Password is not strong enough, It must c")
             return
 
         # Write the details to the file
@@ -108,6 +114,9 @@ def profile():
     confirm_pass = Entry(signup_frame, width=30, bg="lightgray", show="*")
     confirm_pass.grid(row=3, column=1, padx=10, pady=5)
     Button(signup_frame, text="Signup", width=10, bg="yellow", fg="black", command=signup).grid(row=4, column=0, columnspan=2, pady=10)
+
+    Button(root, text="Logout", width=9, pady=2, bg="yellow", fg="black", border=0, command=logout_profile).place(x=25, y=10)
+
 
     root.mainloop()
 ###################################################################
@@ -281,6 +290,7 @@ def store():
     Button(meat_frame, text="Meat", bg="black", fg="yellow", font=("Arial", 14, "bold"), command=open_meat_page).pack(pady=10)
     Button(vegetables_frame, text="Vegetables", bg="black", fg="yellow", font=("Arial", 14, "bold"), command=open_vegetables_page).pack(pady=10)
     Button(fruits_frame, text="Fruits", bg="black", fg="yellow", font=("Arial", 14, "bold"), command=open_fruits_page).pack(pady=10)
+    Button(root, text="Logout", width=9, pady=2, bg="yellow", fg="black", border=0, command=logout_store).place(x=25, y=10)
 
     root.mainloop()
 
