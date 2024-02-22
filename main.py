@@ -42,12 +42,35 @@ def profile():
             messagebox.showerror("Error", "Passwords do not match")
             return
 
+        # Check password strength
+        if not is_strong_password(password):
+            messagebox.showerror("Error", "Password is not strong enough")
+            return
+
         # Write the details to the file
         with open("user_details.txt", "a") as file:
             file.write(f"{username},{password}\n")
 
         messagebox.showinfo("Signup", "Signup successful")
 
+    # Function to check if password is strong
+    def is_strong_password(password):
+        # At least 8 characters long
+        if len(password) < 8:
+            return False
+        # Contains at least one uppercase letter
+        if not any(char.isupper() for char in password):
+            return False
+        # Contains at least one lowercase letter
+        if not any(char.islower() for char in password):
+            return False
+        # Contains at least one digit
+        if not any(char.isdigit() for char in password):
+            return False
+        # Contains at least one special character
+        if not any(char in '!@#$%^&*()-_+=[]{}|:;"\'<>,.?/~`' for char in password):
+            return False
+        return True
 
     root = Tk()
     root.title("Profile")
