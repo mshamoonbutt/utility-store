@@ -283,6 +283,9 @@ def store():
 
     def open_fruits_page():
         create_dropdown(fruits_frame, ["Apple", "Banana", "Peach"])
+        
+    def search_movies():
+        pass
 
     Button(grocery_frame, text="Grocery", bg="black", fg="yellow", font=("Arial", 14, "bold"), command=open_grocery_page).pack(pady=10)
     Button(plastic_frame, text="Plastic", bg="black", fg="yellow", font=("Arial", 14, "bold"), command=open_plastic_page).pack(pady=10)
@@ -291,6 +294,8 @@ def store():
     Button(vegetables_frame, text="Vegetables", bg="black", fg="yellow", font=("Arial", 14, "bold"), command=open_vegetables_page).pack(pady=10)
     Button(fruits_frame, text="Fruits", bg="black", fg="yellow", font=("Arial", 14, "bold"), command=open_fruits_page).pack(pady=10)
     Button(root, text="Logout", width=9, pady=2, bg="yellow", fg="black", border=0, command=logout_store).place(x=25, y=10)
+    Button(root, text='Search', command=search_movies, bg='yellow', fg='black').place(x=850, y=10)  # Adjusted position
+
 
     root.mainloop()
 
