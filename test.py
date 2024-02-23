@@ -65,6 +65,12 @@ def logout_profile():
 
 def logout_store():
     root.destroy()  # Close the store window
+    
+def logout():
+    # Destroy all open windows
+    destroy_all_windows()
+    # Open the main page
+    main_page()    
 
 #Profile Page View
 def profile():
@@ -160,7 +166,8 @@ def profile():
     confirm_pass.grid(row=3, column=1, padx=10, pady=5)
     Button(signup_frame, text="Signup", width=10, bg="yellow", fg="black", command=signup).grid(row=4, column=0, columnspan=2, pady=10)
 
-    Button(root, text="Logout", width=9, pady=2, bg="yellow", fg="black", border=0, command=logout_profile).place(x=25, y=10)
+    Button(root, text="Logout", width=9, pady=2, bg="yellow", fg="black", border=0, command=logout).place(x=25, y=10)
+
 
     def logout_profile():
         destroy_all_windows()
@@ -172,95 +179,7 @@ def profile():
 
 ###################################################################
 #Store Page 
-# Function to open a new page for each category
-def open_category_page(category):
-    messagebox.showinfo("Category", f"You clicked on {category}")
 
-# Function to open the grocery page
-def open_grocery_page():
-    def add_to_cart(product):
-        with open("cart.txt", "a") as file:
-            file.write(f"{product}\n")
-        messagebox.showinfo("Cart", "Added to cart successfully")
-
-    grocery_window = Toplevel()
-    grocery_window.title("Grocery")
-    grocery_window.geometry("400x300")
-    grocery_window.config(bg="black")
-    Label(grocery_window, text="Welcome to the Grocery Page", font=("Arial", 18), bg="black", fg="yellow").pack(pady=20)
-    # Add button to add product to cart
-    Button(grocery_window, text="Add to Cart", bg="yellow", fg="black", command=lambda: add_to_cart("Grocery Product")).pack(pady=10)
-    # You can add more widgets and functionality to this page as needed
-
-# Function to open the plastic page
-def open_plastic_page():
-    def add_to_cart(product):
-        with open("cart.txt", "a") as file:
-            file.write(f"{product}\n")
-        messagebox.showinfo("Cart", "Added to cart successfully")    
-    
-    plastic_window = Toplevel()
-    plastic_window.title("Plastic")
-    plastic_window.geometry("400x300")
-    plastic_window.config(bg="black")
-    Label(plastic_window, text="Welcome to the Plastic Page", font=("Arial", 18), bg="black", fg="yellow").pack(pady=20)
-    
-    Button(plastic_window, text="Add to Cart", bg="yellow", fg="black", command=lambda: add_to_cart("Plastic Product")).pack(pady=10)
-
-# Function to open the clothes page
-def open_clothes_page():
-    def add_to_cart(product):
-        with open("cart.txt", "a") as file:
-            file.write(f"{product}\n")
-        messagebox.showinfo("Cart", "Added to cart successfully")    
-    
-    clothes_window = Toplevel()
-    clothes_window.title("Clothes")
-    clothes_window.geometry("400x300")
-    clothes_window.config(bg="black")
-    Label(clothes_window, text="Welcome to the Clothes Page", font=("Arial", 18), bg="black", fg="yellow").pack(pady=20)
-    Button(clothes_window, text="Add to Cart", bg="yellow", fg="black", command=lambda: add_to_cart("Clothes")).pack(pady=10)
-
-# Function to open the meat page
-def open_meat_page():
-    def add_to_cart(product):
-        with open("cart.txt", "a") as file:
-            file.write(f"{product}\n")
-        messagebox.showinfo("Cart", "Added to cart successfully")    
-    
-    meat_window = Toplevel()
-    meat_window.title("Meat")
-    meat_window.geometry("400x300")
-    meat_window.config(bg="black")
-    Label(meat_window, text="Welcome to the Meat Page", font=("Arial", 18), bg="black", fg="yellow").pack(pady=20)
-    Button(meat_window, text="Add to Cart", bg="yellow", fg="black", command=lambda: add_to_cart("Meat")).pack(pady=10)
-# Function to open the vegetables page
-def open_vegetables_page():
-    def add_to_cart(product):
-        with open("cart.txt", "a") as file:
-            file.write(f"{product}\n")
-        messagebox.showinfo("Cart", "Added to cart successfully")    
-    
-    vegetables_window = Toplevel()
-    vegetables_window.title("Vegetables")
-    vegetables_window.geometry("400x300")
-    vegetables_window.config(bg="black")
-    Label(vegetables_window, text="Welcome to the Vegetables Page", font=("Arial", 18), bg="black", fg="yellow").pack(pady=20)
-    Button(vegetables_window, text="Add to Cart", bg="yellow", fg="black", command=lambda: add_to_cart("Vegetables")).pack(pady=10)
-# Function to open the fruits page
-def open_fruits_page():
-    def add_to_cart(product):
-        with open("cart.txt", "a") as file:
-            file.write(f"{product}\n")
-        messagebox.showinfo("Cart", "Added to cart successfully")    
-    
-    fruits_window = Toplevel()
-    fruits_window.title("Fruits")
-    fruits_window.geometry("400x300")
-    fruits_window.config(bg="black")
-    Label(fruits_window, text="Welcome to the Fruits Page", font=("Arial", 18), bg="black", fg="yellow").pack(pady=20)
-    Button(fruits_window, text="Add to Cart", bg="yellow", fg="black", command=lambda: add_to_cart("Fruits")).pack(pady=10)
-# Function to create the store page
 def store():
     def add_to_cart(product):
         with open("cart.txt", "a") as file:
