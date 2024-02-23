@@ -282,18 +282,26 @@ def store():
         
 
     def display_products(product_list):
-        for widget in frame.winfo_children():
-            widget.destroy()
-        for i, product in enumerate(product_list):
-            product_label = Label(frame, text=f"{product['product_name']} - ${product['price']}", bg="black", fg="white")
-            product_label.grid(row=i, column=0, padx=10, pady=5, sticky="w")
-            add_to_cart_button = Button(frame, text="Add to Cart", bg="yellow", fg="black", command=lambda p=product: add_to_cart(p["product_name"]))
-            add_to_cart_button.grid(row=i, column=1, padx=10, pady=5)
-        product_label.pack(side=LEFT, fill=BOTH)
-        scrollbar = Scrollbar(frame)
+        canvas = Canvas(frame, height=650)  # Adjust the height of the canvas
+        canvas.pack(side=LEFT, fill=BOTH, expand=True)
+
+        scrollbar = Scrollbar(frame, orient=VERTICAL, command=canvas.yview)
         scrollbar.pack(side=RIGHT, fill=Y)
-        product_label = Listbox(frame, yscrollcommand=scrollbar.set, width=50)
-        scrollbar.config(command=product_label.yview)
+
+        canvas.configure(yscrollcommand=scrollbar.set)
+        canvas.bind('<Configure>', lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+
+        inner_frame = Frame(canvas)
+        canvas.create_window((0, 0), window=inner_frame, anchor='nw')
+
+        for i, product in enumerate(product_list):
+            product_label = Label(inner_frame, text=f"{product['product_name']} - ${product['price']}", bg="black", fg="white", font=("Arial", 12))
+            product_label.grid(row=i, column=0, padx=10, pady=5, sticky="w")
+            add_to_cart_button = Button(inner_frame, text="Add to Cart", bg="yellow", fg="black", command=lambda p=product: add_to_cart(p["product_name"]))
+            add_to_cart_button.grid(row=i, column=1, padx=10, pady=5)
+
+        inner_frame.update_idletasks()
+        canvas.config(scrollregion=canvas.bbox("all"))
 
 
     root = Tk()
