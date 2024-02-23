@@ -1,6 +1,51 @@
 from tkinter import *
 from tkinter import messagebox
 
+open_windows = []
+
+# Function to destroy all open windows
+def destroy_all_windows():
+    for window in open_windows:
+        window.destroy()
+    open_windows.clear()
+
+#Front page UI
+def main_page():
+    root = Tk()
+    root.title("Home Page")
+    root.geometry("925x750+250+0")
+    root.config(bg="black")
+    root.resizable(False, False)
+    frame = Frame(root, width=700, height=700, bg="white")
+    frame.place(x=120, y=70)
+    heading = Label(root, text="Welcome to Utility Store", fg="yellow", bg="black", font=("Times", 23, "bold"))
+    heading.place(x=300, y=10)
+    img = PhotoImage(file='image1.png')
+    Label(frame, image=img, bg='black').place(x=-2, y=-2)
+
+    # Function to destroy all windows and open the profile page
+    def open_profile():
+        destroy_all_windows()
+        profile()
+
+    # Function to destroy all windows and open the store page
+    def open_store():
+        destroy_all_windows()
+        store()
+
+    # Function to destroy all windows and open the cart page
+    def open_cart():
+        destroy_all_windows()
+        view_cart()
+
+    # Buttons for profile, store, and cart
+    Button(root, width=9, pady=2, text="Your Profile", bg="yellow", fg="black", border=0, command=open_profile).place(x=830, y=10)
+    Button(root, width=9, pady=2, text="View Store", bg="yellow", fg="black", border=0, command=open_store).place(x=755, y=10)
+    Button(root, width=9, pady=2, text="View Cart", bg="yellow", fg="black", border=0, command=open_cart).place(x=25, y=10)
+
+    open_windows.append(root)  # Add the main page window to the list of open windows
+    root.mainloop()
+
 #Front page UI
 root = Tk()
 root.title("Home Page")
@@ -117,8 +162,14 @@ def profile():
 
     Button(root, text="Logout", width=9, pady=2, bg="yellow", fg="black", border=0, command=logout_profile).place(x=25, y=10)
 
+    def logout_profile():
+        destroy_all_windows()
+        main_page()
 
-    root.mainloop()
+    Button(root, text="Logout", width=9, pady=2, bg="yellow", fg="black", border=0, command=logout_profile).place(x=25, y=10)
+
+    open_windows.append(root)  # Add the profile page window to the list of open windows
+
 ###################################################################
 #Store Page 
 # Function to open a new page for each category
