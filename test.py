@@ -204,6 +204,15 @@ def store():
         display_products(sorted_products)
         
 
+    def add_to_cart(product_name, quantity):
+        with open("cart.txt", "a") as file:
+            file.write(f"{product_name},{quantity}\n")
+        messagebox.showinfo("Cart", f"Added {quantity} {product_name}(s) to cart successfully")
+
+    def add_to_cart_dropdown(product_name, quantity, frame):
+        add_to_cart(product_name, quantity)
+        frame.destroy()
+
     def display_products(product_list):
         # Clear the existing products displayed on the screen
         for widget in frame.winfo_children():
@@ -224,11 +233,14 @@ def store():
         for i, product in enumerate(product_list):
             product_label = Label(inner_frame, text=f"{product['product_name']} - ${product['price']}", bg="black", fg="white", font=("Arial", 12))
             product_label.grid(row=i, column=0, padx=10, pady=5, sticky="w")
-            add_to_cart_button = Button(inner_frame, text="Add to Cart", bg="yellow", fg="black", command=lambda p=product: add_to_cart(p["product_name"]))
-            add_to_cart_button.grid(row=i, column=1, padx=10, pady=5)
+            quantity_entry = Entry(inner_frame, width=5)
+            quantity_entry.grid(row=i, column=1, padx=10, pady=5)
+            add_to_cart_button = Button(inner_frame, text="Add to Cart", bg="yellow", fg="black", command=lambda p=product, q=quantity_entry: add_to_cart_dropdown(p["product_name"], q.get(), inner_frame))
+            add_to_cart_button.grid(row=i, column=2, padx=10, pady=5)
 
         inner_frame.update_idletasks()
         canvas.config(scrollregion=canvas.bbox("all"))
+
 
 
 
