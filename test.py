@@ -280,8 +280,16 @@ def store():
         sorted_products = sorted(products, key=lambda x: x["price"])
         display_products(sorted_products)  
         
+    def sort_products_by_price():
+        sorted_products = sorted(products, key=lambda x: x["price"])
+        display_products(sorted_products)
+        
 
     def display_products(product_list):
+        # Clear the existing products displayed on the screen
+        for widget in frame.winfo_children():
+            widget.destroy()
+
         canvas = Canvas(frame, height=650)  # Adjust the height of the canvas
         canvas.pack(side=LEFT, fill=BOTH, expand=True)
 
@@ -302,6 +310,7 @@ def store():
 
         inner_frame.update_idletasks()
         canvas.config(scrollregion=canvas.bbox("all"))
+
 
 
     root = Tk()
